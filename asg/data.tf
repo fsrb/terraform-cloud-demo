@@ -1,4 +1,4 @@
-# Pulls subnet information
+
 data "terraform_remote_state" "vpc" {
   backend = "remote"
 
@@ -13,7 +13,7 @@ data "terraform_remote_state" "vpc" {
 
 
 
-# Finds Ubuntu AMI 
+
 data "aws_ami" "ubuntu" {
   most_recent = true
 
